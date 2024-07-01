@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuoWalker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="file-sharing-link">File Sharing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="file-sharing-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>File Sharing Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <p id="login-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="file-list" class="file-list">
+        <h2>Available Files</h2>
+        <ul>
+            <li>Rebel Girl <button id="download-btn">Download</button></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
